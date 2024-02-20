@@ -8,13 +8,15 @@ import { ProfileComponent } from './profile/profile.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './header/header.component';
+import { AddUserComponent } from './add-user/add-user.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     ProfileComponent,
-    HeaderComponent
+    HeaderComponent,
+    AddUserComponent
   ],
   imports: [
     BrowserModule,

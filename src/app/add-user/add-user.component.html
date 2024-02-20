@@ -1,0 +1,65 @@
+<div class="container border p-2">
+    <h2 class="title mb-3">Add User</h2>
+    <form class="adduserform" #adduserForm="ngForm" (ngSubmit)="adduser(adduserForm.value)">
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label class="form-label">Username</label>
+                <input type="text" class="form-control"  id="username" placeholder="Username" ngModel name="username">
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Role</label>
+                <select class="form-control" ngModel name="role">
+                    <option value="ROLE_ADMIN">Admin</option>
+                    <option value="ROLE_USER">User</option>
+                </select>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label class="form-label" for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Password" ngModel
+                    name="password">
+            </div>
+            <div class="col-md-6">
+                <label class="form-label" for="confirm_password">Confirm Password</label>
+                <input type="password" class="form-control" id="confirm_password" placeholder="Confirm Password" ngModel
+                    name="confirmPassword">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label class="form-label">First Name</label>
+                <input type="text" class="form-control" id="firstname" placeholder="First name" ngModel
+                    name="firstName">
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Middle Name</label>
+                <input type="text" class="form-control" id="middlename" placeholder="Middle name" ngModel
+                    name="middleName">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="lastname" placeholder="Last name" ngModel name="lastName">
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Department ID</label>
+                <input type="text" class="form-control" id="departmentid" placeholder="Department ID" ngModel
+                    name="departmentId">
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Gender</label>
+                <select class="form-control" ngModel name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col text-end">
+                <button type="submit" class="btn btn-maroon">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>
