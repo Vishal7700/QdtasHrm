@@ -1,1 +1,11 @@
-<p>profile works!</p>
+<div class="container-fluid g-0">
+    <app-header (sideNavToggled)="sideNavStatus = $event"> </app-header>
+
+    <main>
+        <app-sidenav [sideNavStatus]="sideNavStatus" [ngClass]="{'app-sidenav-open':sideNavStatus}"> </app-sidenav>
+
+        <div class="display-area">
+            <h1>hiiiiiii</h1>
+        </div>
+    </main>
+</div>

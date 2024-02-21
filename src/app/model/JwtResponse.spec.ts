@@ -1,4 +1,4 @@
-import { JwtResponse } from './jwtresponse';
+import { JwtResponse } from './JwtResponse';
 
 describe('JwtToken', () => {
   it('should create an instance', () => {
