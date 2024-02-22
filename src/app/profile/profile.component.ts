@@ -7,7 +7,7 @@ import { UserService } from '../service/userServices';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent {
-sideNavStatus: any;
+sideNavStatus: boolean = false;
 
 
   constructor(private UserService:UserService){

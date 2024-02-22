@@ -1,13 +1,13 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-sidenav',
   templateUrl: './sidenav.component.html',
   styleUrls: ['./sidenav.component.css']
 })
-export class SidenavComponent {
+export class SidenavComponent implements OnInit{
 
-  @Input() sideNavStatus: boolean = false;
+ @Input() sideNavStatus: boolean = false;
 
   list = [
     {
@@ -36,5 +36,12 @@ export class SidenavComponent {
       icon: 'fa-sharp fa-solid fa-user-check',
     },
   ]
+
+
+constructor () {}
+
+ngOnInit(): void {
+  
+}
 
 }
