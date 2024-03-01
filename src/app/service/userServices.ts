@@ -17,7 +17,7 @@ export class UserService {
   login(data:any) {
     this.http.post(BASE_API_URL+'/login',data).subscribe((result:any)=>{
       localStorage.setItem("token",result.token);
-      this.router.navigate(['.profile']);
+      this.router.navigate(['/profile']);
     })
   }
 

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { UserService } from '../service/userServices';
 
 @Component({
@@ -16,5 +16,13 @@ sideNavStatus: boolean = false;
   ngOnInit() {
     this.UserService.profile();
     }
+
+ isSidebarExpanded: boolean = true;
+
+
+  onToggleSidebar(expanded: boolean) {
+    this.isSidebarExpanded = expanded;
+  }
+
   }
 
